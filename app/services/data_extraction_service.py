@@ -19,7 +19,7 @@ class DataExtractionService:
     # Function to retry in case of failures
     def retry_request(self, url):
         for attempt in range(self.retries):
-            logging.info(f"Retrying attempt: {attempt}")
+            logging.info(f"Retrying attempt: {attempt + 1}"
             try:
                 proxies = {"http": self.proxy, "https": self.proxy} if self.proxy else None
                 response = requests.get(url, proxies=proxies, timeout=10)
