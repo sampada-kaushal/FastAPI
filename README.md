@@ -92,14 +92,13 @@ FASTAPI/
 │   │   ├── data_extraction_service.py # Scraping logic
 │   │   ├── file_manager_service.py    # File saving and management
 │   │   ├── notification_service.py    # Notification logic
-│   │   └── product_service.py         # Product processing logic
+│   │   └── product_service.py         # Product extraction logic
 │   ├── utils/
 │   │   └── hashing.py                 # Utility functions for hashing
 ├── images/              # Directory for downloaded images
-├── venv/                # Virtual environment files
-├── products.json        # Scraped product data
+├── products.json        # Scraped product data- Output file
 ├── requirements.txt     # Project dependencies
-└── main.py              # Application entry point
+└── main.py              # Application entry point- Controller
 ```
 
 ---
